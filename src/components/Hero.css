@@ -1,0 +1,134 @@
+.hero {
+  position: relative;
+  top: -10px;
+  z-index: -99;
+  width: 100%;
+  margin: 0;
+  padding: 40px var(--layout-pad-x) 44px;
+  min-height: 320px;
+  box-sizing: border-box;
+  background-image: url('/hero-tile.png');
+  background-repeat: repeat;
+  background-size: auto var(--hero-pattern-h);
+  background-position: 0 0;
+
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 52rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0;
+  padding: 1.35rem 1.5rem 1.45rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(.5px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 12px 40px rgba(194, 24, 91, 0.12);
+}
+
+.hero-card h1 {
+  margin: 0 0 10px;
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2;
+  color: var(--text-main);
+  letter-spacing: 0.02em;
+}
+
+.hero-card p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: var(--text-soft);
+  font-weight: 400;
+}
+
+.hero-masters {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-masters-title {
+  margin: 0 0 16px;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-main);
+  letter-spacing: 0.02em;
+}
+
+.hero-masters-error {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--rose-deep);
+}
+
+.hero-masters-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 28px;
+}
+
+.hero-masters-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 104px;
+}
+
+.hero-masters-avatar-wrap {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 24px rgba(194, 24, 91, 0.15);
+  background: var(--rose-light);
+}
+
+.hero-masters-avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-masters-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.25;
+  text-align: center;
+  max-width: 104px;
+}
+
+@media (max-width: 600px) {
+  .hero-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-masters-title {
+    font-size: 1.2rem;
+  }
+}

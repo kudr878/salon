@@ -1,0 +1,142 @@
+.auth-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(74, 53, 64, 0.28);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  overflow: auto;
+}
+
+.auth-modal-box {
+  width: 100%;
+  max-width: 22rem;
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+  padding: 0 0 1.1rem;
+}
+
+.auth-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem 0.5rem;
+  border-bottom: 1px dashed var(--border-subtle);
+}
+
+.auth-modal-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.auth-modal-x {
+  border: none;
+  background: transparent;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-soft);
+  padding: 0 0.2rem;
+}
+
+.auth-modal-x:hover {
+  color: var(--rose-deep);
+}
+
+.auth-modal-tabs {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.auth-modal-tab {
+  padding: 0.35rem 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  background: none;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-soft);
+  cursor: pointer;
+}
+
+.auth-modal-tab:hover {
+  color: var(--rose-deep);
+}
+
+.auth-modal-tab--active {
+  color: var(--rose-deep);
+  border-bottom-color: var(--rose-mid);
+}
+
+.auth-modal-error {
+  margin: 0.65rem 1rem 0;
+  font-size: 0.86rem;
+  color: var(--error, #b71c1c);
+}
+
+.auth-modal-form {
+  padding: 0.85rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.auth-modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  font-size: 0.84rem;
+  color: var(--text-soft);
+}
+
+.auth-modal-field input,
+.auth-modal-field select {
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-main);
+  background: var(--white);
+}
+
+.auth-modal-field input:focus,
+.auth-modal-field select:focus {
+  outline: none;
+  border-color: var(--rose-mid);
+}
+
+.auth-modal-submit {
+  margin-top: 0.35rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--rose-deep);
+  background: var(--rose-light);
+  border: 1px solid var(--rose-mid);
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+}
+
+.auth-modal-submit:hover:not(:disabled) {
+  background: var(--white);
+}
+
+.auth-modal-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
